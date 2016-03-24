@@ -1,0 +1,103 @@
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700italic,700,400italic,300italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="time.css">
+    <script src="jquery-1.12.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="time.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+
+<h1>When the f*ck am I?</h1>
+<form action="timezone.html" method="post">
+<p>Where do you think you woke up?
+<select id="timeZone" name="TimeZones" >
+  <option placeholder="TimeZone">Time Zone</option>
+  <option value="-3">ADT</option>
+  <option value="-3">ART</option>
+  <option value="-4">AST</option>
+  <option value="-8">AKDT</option>
+  <option value="-3">BRT</option>
+  <option value="-4">CDT</option>
+  <option value="-10">CKT</option>
+  <option value="-4">CLT</option>
+  <option value="-3">CLST</option>
+  <option value="-5">CST</option>
+  <option value="-1">CVT</option>
+  <option value="-4">EST</option>
+  <option value="0">GMT</option>
+  <option value="-10">HAST</option>
+  <option value="-6">MST</option>
+  <option value="-11">NUT</option>
+  <option value="-11">NZDT</option>
+  <option value="-7">PST</option>
+  <option value="-3">ROTT</option>
+  <option value="0">UTC</option>
+  <option value="-3">UYT</option>
+  <option value="0">WET</option>
+</select>
+</p>
+<p>When did you wake up?</p>
+<select id="myTime">
+  <option value="1">1 am</option>
+  <option value="2">2 am</option>
+  <option value="3">3 am</option>
+  <option value="4">4 am</option>
+  <option value="5">5 am</option>
+  <option value="6">6 am</option>
+  <option value="7">7 am</option>
+  <option value="8">8 am</option>
+  <option value="9">9 am</option>
+  <option value="10">10 am</option>
+  <option value="11">11 am</option>
+  <option value="12">12 pm</option>
+  <option value="13">1 pm</option>
+  <option value="14">2 pm</option>
+  <option value="15">3 pm</option>
+  <option value="16">4 pm</option>
+  <option value="17">5 pm</option>
+  <option value="18">6 pm</option>
+  <option value="19">7 pm</option>
+  <option value="20">8 pm</option>
+  <option value="21">9 pm</option>
+  <option value="22">10 pm</option>
+  <option value="23">11 pm</option>
+  <option value="24">12 am</option>
+</select>
+<p>When do you usually wake up?</p>
+<p><select id="newTime">
+  <option value="1">1 am</option>
+  <option value="2">2 am</option>
+  <option value="3">3 am</option>
+  <option value="4">4 am</option>
+  <option value="5">5 am</option>
+  <option value="6">6 am</option>
+  <option value="7">7 am</option>
+  <option value="8">8 am</option>
+  <option value="9">9 am</option>
+  <option value="10">10 am</option>
+  <option value="11">11 am</option>
+  <option value="12">12 pm</option>
+  <option value="13">1 pm</option>
+  <option value="14">2 pm</option>
+  <option value="15">3 pm</option>
+  <option value="16">4 pm</option>
+  <option value="17">5 pm</option>
+  <option value="18">6 pm</option>
+  <option value="19">7 pm</option>
+  <option value="20">8 pm</option>
+  <option value="21">9 pm</option>
+  <option value="22">10 pm</option>
+  <option value="23">11 pm</option>
+  <option value="24">12 am</option>
+</select></p>
+<br/>
+<p><input type="submit" id="button" value="Find Me!"></p>
+</form>
+<p>Okay, you are:</p>
+<h2 id="result"></h2>
+</body>
+</html>
