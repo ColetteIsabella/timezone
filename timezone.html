@@ -10,10 +10,11 @@
     <script src="time.js" type="text/javascript" charset="utf-8"></script>
     </head>
     <body>
-
+<div class="border">
 <h1>When the f*ck am I?</h1>
+<h2>A location-tracker for those with a less than consistent daily cycle.</h2>
 <form action="timezone.html" method="post">
-<p>Where do you think you woke up?
+<p>Where do you think you woke up? Or at least, where did you fall asleep?
 <select id="timeZone" name="TimeZones" >
   <option placeholder="TimeZone">Time Zone</option>
   <option value="-3">ADT</option>
@@ -40,7 +41,7 @@
   <option value="0">WET</option>
 </select>
 </p>
-<p>When did you wake up?</p>
+<p>When did you wake up?
 <select id="myTime">
   <option value="1">1 am</option>
   <option value="2">2 am</option>
@@ -67,8 +68,8 @@
   <option value="23">11 pm</option>
   <option value="24">12 am</option>
 </select>
-<p>When do you usually wake up?</p>
-<p><select id="newTime">
+<p>When do you usually wake up?
+<select id="newTime">
   <option value="1">1 am</option>
   <option value="2">2 am</option>
   <option value="3">3 am</option>
@@ -94,10 +95,12 @@
   <option value="23">11 pm</option>
   <option value="24">12 am</option>
 </select></p>
-<br/>
-<p><input type="submit" id="button" value="Find Me!"></p>
+<p><strong><input type="submit" id="button" value="Find Me!"></strong></p>
 </form>
 <p>Okay, you are:</p>
 <h2 id="result"></h2>
+<p id="result2"></p>
+
+</div>
 </body>
 </html>

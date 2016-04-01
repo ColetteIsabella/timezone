@@ -30,9 +30,9 @@ jQuery(document).ready(function($){
     var z = (n - gTime);
 
   var zoneResult;
-  if (z == (-11 || 13)){
+  if ((z == -11) || (z == 13)){
     zoneResult = ("Alofi, Nieue");
-  } else if (z == (-10 || 14)){
+  } else if ((z == -10) || (z== 14)){
     zoneResult = ("Honolulu, Hawai'i");
   } else if (z == -9) {
     zoneResult = ("Adak, Alaska");
@@ -68,22 +68,23 @@ jQuery(document).ready(function($){
     zoneResult = ("Thimphu, Bhutan");
   } else if (z == 7) {
     zoneResult = ("Phnom Penh, Cambodia");
-  } else if (z == 8 || -16) {
+  } else if ((z == 8) || (z == -16)) {
     zoneResult = ("Kuala Lumpur, Malasia");
-  } else if (z == 9 || -15) {
+  } else if ((z == 9) || (z == -15)) {
     zoneResult = ("Tokyo, Japan");
-  } else if (z == 10 || -14) {
+  } else if ((z == 10) || (z == -14)) {
     zoneResult = ("Port Moresby, Papua New Guinea");
-  } else if (z == 11 || -13) {
+  } else if ((z == 11) || (z == -13)) {
     zoneResult = ("Canberra, Australia");
-  } else if (z == 12 || -12) {
+  } else if ((z == 12) || (z == -12)) {
     zoneResult = ("Tarawa, Kiribati");
   }
   else {
     zoneResult = ("You are no where!");
   };
 
-  $("#result").text("You're in " + zoneResult + "!");
+  $("#result").text("In " + zoneResult + "!  ");
+  $("#result2").text("So, if someone asks, you're not late, or early, you're on " + zoneResult + " time.");
   console.log (m);
   console.log (t);
   console.log (gTime);
